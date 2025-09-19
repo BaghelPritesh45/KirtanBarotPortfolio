@@ -1,1 +1,9 @@
-asset/images/*
+# Ignore dependencies
+node_modules/
+
+# Ignore build outputs (if any)
+dist/
+build/
+
+# Do NOT ignore project images
+# asset/images/*
