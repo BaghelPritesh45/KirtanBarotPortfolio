@@ -1,0 +1,101 @@
+@import "tailwindcss";
+
+@theme {
+    /* 🎨 Colors */
+    --color-primary: #000000;
+    /*subheading colr */
+    --color-secondary: #555555;
+    /* hover-color */
+    --color-hover-color: #808080;
+    /* border-color */
+    --color-boder-color: #A3A3A3;
+    /* btn color */
+    --color-btn-color: #353535;
+    --color-menu:oklch(98.5% 0.001 106.423);
+
+    
+
+    --breakpoint-sm-mobile: 330px;
+    --breakpoint-sm-tablet: 637px;
+    --breakpoint-lg-tablet: 927px;
+    --breakpoint-sm-desk: 1296px;
+
+    
+}
+
+@utility flex-center {
+    @apply flex justify-center items-center;
+}
+@utility about-card-pera{
+    @apply text-sm w-full sm:text-lg text-gray-700 ;
+}
+
+@utility btn {
+    @apply border-2 border-boder-color text-center px-5 py-2.5 rounded-3xl hover:bg-btn-color active:bg-btn-color active:border-btn-color active:text-white  hover:border-btn-color hover:text-white duration-300 cursor-pointer;
+}
+@utility btn-2 {
+    @apply border-2  text-center px-5 py-2.5 rounded-3xl bg-btn-color border-btn-color text-white  hover:bg-primary hover:border-primary active:border-primary  active:bg-primary duration-300 cursor-pointer;
+}
+
+@utility hero-cool {
+    @apply text-2xl sm:text-3xl font-semibold leading-5;
+}
+
+@utility section-marign {
+    @apply sm:mb-[12rem] mb-[5rem];
+}
+
+/* ABOUT SECTION */
+@utility about-grid {
+    @apply grid grid-cols-1 md:grid-cols-2 border-b-2 border-boder-color items-center justify-items-center gap-x-2;
+    row-gap: 1.5rem;
+    margin-bottom: 3rem;
+    padding-bottom: 3rem;
+}
+
+@utility heading2 {
+    @apply text-primary text-4xl sm:text-5xl tracking-tight font-semibold capitalize text-center md:mb-12;
+    padding-bottom: 2rem;
+}
+
+@utility heading3 {
+    @apply text-primary text-2xl sm:text-3xl font-medium;
+    margin-bottom: 0.5rem;
+}
+
+@layer components {
+    .about-card-image {
+        @apply w-full rounded-3xl;
+        max-width: 400px;
+        /* custom */
+        box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.3);
+    }
+
+    .about-card-text {
+        @apply p-1 sm:p-5;
+        max-width: 500px;
+    }
+
+    .card-pera {
+        @apply text-sm w-full sm:text-base text-gray-700 line-clamp-4 ;
+         
+    }
+    .border-line{
+        @apply border-2 border-boder-color;
+    }
+
+     
+}
+
+/* RESPONSIVE NESS FOR SM */
+@layer components {
+
+    /* NAVBAR */
+    .logo {
+        @apply text-3xl font-normal tracking-tight;
+    }
+
+    .nav-links {
+        @apply flex flex-col gap-[1.3rem] text-2xl sm:flex-row sm:items-center sm:justify-center sm:gap-[2rem] sm:text-lg md:text-2xl lg:text-2xl bg-white;
+    }
+}

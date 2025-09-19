@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="./src/output.css" />
+    <link rel="stylesheet" href="./src/app.css" />
+    <link rel="icon" href="asset/images/logo.png" type="image/x-icon">
+    <title>Kirtan Barot</title>
+</head>
+
+<body>
+    <div class="w-[90%] mx-auto">
+        <!-- HEADER -->
+        <header class="md:mb-[2rem] sm:mb-[15rem] max-sm-tablet:mb-[6rem] max-sm-mobile:mb-[11rem]">
+            <!-- NAVIGATION -->
+            <nav class="nav-menu h-[12vh] flex items-center justify-between">
+                <div class="logo w-[60px] md:w-[90px] flex items-center">
+                    <a href="#"><img class="w-full" src="asset/images/logo.png" alt="logo" fetchpriority="high" decoding="async" /></a>
+                </div>
+                <div
+                    class="sm-navlinks shadow-xl/30b bg-white sm:shadow-none max-sm:duration-500 sm:static sm:w-fit sm:h-fit sm:p-0 sm:justify-end fixed h-screen right-[-100%] top-0 w-[60%] z-10 flex justify-start px-[1rem] pt-[5rem]">
+                    <ul class="nav-links">
+                        <li class="hover:text-secondary hover:underline hover:underline-offset-[0.7rem] duration-200">
+                            <a href="#about">About</a>
+                        </li>
+                        <li class="hover:text-secondary hover:underline hover:underline-offset-[0.7rem] duration-150">
+                            <a href="#work">Work</a>
+                        </li>
+                        <li class="hover:text-secondary hover:underline hover:underline-offset-[0.7rem] duration-150">
+                            <a href="#contact-me">Contect Me</a>
+                        </li>
+                    </ul>
+                </div>
+                <ion-icon id="menu-btn" onclick="onToggleMenu(this)" name="menu-outline"
+                    class="cursor-pointer text-5xl z-10 sm:hidden"></ion-icon>
+            </nav>
+
+            <!-- HERO SECTION -->
+            <section class="hero-section mt-[2rem] md:mt-0 md:flex justify-around items-center">
+                <div
+                    class="grid grid-cols-1 justify-items-center items-center justify-center md:grid-cols-2 sm-desk:ml-[5rem]">
+                    <div class="hero-first flex flex-col items-start justify-center">
+                        <div class="text-secondary text-sm sm:text-base font-light">
+                            Hello I'm
+                        </div>
+                        <h1 class="sm:text-5xl text-4xl font-bold pb-1">Kirtan Barot</h1>
+                        <!-- <h2 class="text-3xl font-semibold text-dark-gray">Manager</h2> -->
+                        <p
+                            class="text-black sm:max-w-[90%] text-justify sm:text-base text-sm md:w-full lg:w-[75%] text-dark-gray mb-2.5">
+                            A highly experienced Production Head and Casting Director in the
+                            Gujarati Film Industry, known for leading successful productions
+                            and discovering top talent for over 15 years.
+                        </p>
+                        <div class="w-full flex gap-3.5 pb-2.5 mb-5">
+                            <button class="btn"><a href="#about">About Me</a></button>
+                            <button class="btn-2">
+                                <a href="#contact-me">Contact Me</a>
+                            </button>
+                        </div>
+                        <div class="hero-cool w-full pl-2.5 gap-5 items-center flex">
+                            <div>
+                                <h3 class="herocool">3000+</h3>
+                                <p class="text-xs sm:text-sm">productions managed</p>
+                            </div>
+                            <div>
+                                <h3 class="herocool">15+</h3>
+                                <p class="text-xs sm:text-sm">Years Experience</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        class="md:order-1 md:max-w-[325px] md:h-[325px] sm:max-w-[300px] sm:h-[300px] max-w-[250px] h-[250px] rounded-2xl -order-1 profile-hover">
+                        <div class="w-full h-full flex items-center justify-center">
+                            <img src="./asset/images/profile-picture.jpg" alt="person" fetchpriority="high" decoding="async"
+                                class="w-[100%] h-[100%] rounded-full shadow-lg border-4 border-hover-color object-cover object-center transition-transform duration-300 hover:scale-105" />
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </header>
+
+        <main>
+            <!--  ABOUT SECTION-->
+            <section id="about" class="about-section section-marign">
+                <h2 class="heading2 auto-scroll">About Me</h2>
+                <div class="main-about">
+                    <!-- FIRST ITEM -->
+                    <div class="about-grid fadeup">
+                        <div class="">
+                            <img class="about-card-image" src="asset/images/music-album.jpg" alt="" loading="lazy" decoding="async" />
+                        </div>
+                        <div class="about-card-text">
+                            <h3 class="heading3 lg:text-5xl">Music Albums</h3>
+                            <p class="about-card-pera">
+                                Gujarati music albums blend tradition and modern beats,
+                                showcasing talented artists and heartfelt stories. Experience
+                                the soul of Gujarat in every album.
+                            </p>
+                        </div>
+                    </div>
+                    <!-- SECOND ITEM -->
+                    <div class="about-grid fadeup">
+                        <div class="about-img-perant md:order-2">
+                            <img class="about-card-image" src="asset/images/movielist.jpg" alt="" loading="lazy" decoding="async" />
+                        </div>
+                        <div class="md:order-1 about-card-text">
+                            <h3 class="heading3 lg:text-5xl">Movie List</h3>
+                            <p class="about-card-pera">
+                                Discover Gujarati cinema through our curated movie
+                                list—featuring classics and new releases that showcase
+                                culture, talent, and storytelling.
+                            </p>
+                        </div>
+                    </div>
+                    <!-- THIRD ITEM -->
+                    <div class="about-grid fadeup">
+                        <div class="about-img-perant">
+                            <img class="about-card-image" src="asset/images/liveshow.jpg" alt="" loading="lazy" decoding="async" />
+                        </div>
+                        <div class="about-card-text">
+                            <h3 class="heading3 lg:text-5xl">Live Shows</h3>
+                            <p class="about-card-pera">
+                                Experience the excitement of Gujarati live shows—music,
+                                theater, and Garba. Enjoy top artists and vibrant
+                                entertainment.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- WORK SECTION -->
+            <section id="work" class="work-section  section-marign">
+                <h2 class="heading2 auto-scroll">Music Videos</h2>
+                <div class="mt-6 relative">
+                    <!-- Slider Wrapper -->
+                    <div id="work-slider" class="relative">
+                        <!-- Prev Button -->
+                        <button id="work-prev" aria-label="Previous" class="hidden sm:flex items-center justify-center absolute left-2 top-1/2 -translate-y-1/2 z-10 h-10 w-10 rounded-full bg-white/90 shadow-md border border-gray-200 text-gray-700 hover:bg-gray-100 active:scale-95 duration-150">
+                            <ion-icon class="text-3xl font-light" name="chevron-back"></ion-icon>
+                        </button>
+
+                        <!-- Next Button -->
+                        <button id="work-next" aria-label="Next" class="hidden sm:flex items-center justify-center absolute right-2 top-1/2 -translate-y-1/2 z-10 h-10 w-10 rounded-full bg-white/90 shadow-md border border-gray-200 text-gray-700 hover:bg-gray-100 active:scale-95 duration-150">
+                            <ion-icon class="text-3xl font-light" name="chevron-forward"></ion-icon>
+                        </button>
+
+                        <!-- Viewport -->
+                        <div class="overflow-hidden rounded-2xl border border-gray-200 bg-white">
+                            <!-- Track -->
+                            <div class="flex transition-transform duration-500 ease-out" id="work-track">
+                                <!-- Slide 1 -->
+                                <div class="shrink-0 p-4 basis-full md:basis-1/2 lg:basis-1/3">
+                                    <article class="h-full rounded-xl border border-gray-200 shadow-sm hover:shadow-md duration-200 overflow-hidden flex flex-col">
+                                        <img src="asset/images/maa.jpg" alt="Production still" class="w-full h-56 object-cover" loading="lazy" decoding="async">
+                                        <div class="p-5 flex-1">
+                                            <h3 class="text-xl font-semibold mb-1">Maa – Song from Jigar Ni Jeet</h3>
+                                            <p class="text-sm text-gray-600">A soulful Gujarati track by Jigar Thakor, celebrating a mother's love with heartfelt lyrics and soothing music.</p>
+                                        </div>
+                                        <div class="p-5 pt-0">
+                                            <button class="btn"><a target="_blank" href="https://youtu.be/CProTe4A3cc?si=ZaNarJzphgXnjufN">Watch Now</a></button>
+                                        </div>
+                                    </article>
+                                </div>
+                                <!-- Slide 2 -->
+                                <div class="shrink-0 p-4 basis-full md:basis-1/2 lg:basis-1/3">
+                                    <article class="h-full rounded-xl border border-gray-200 shadow-sm hover:shadow-md duration-200 overflow-hidden flex flex-col">
+                                        <img src="asset/images/workphoto.jpg" alt="Production still" class="w-full h-56 object-cover" loading="lazy" decoding="async">
+                                        <div class="p-5 flex-1">
+                                            <h3 class="text-xl font-semibold mb-1">Dil Ma Rehjo – Kajal Maheriya</h3>
+                                            <p class="text-sm text-gray-600">A heartfelt romantic track by Kajal Maheriya, expressing true love that always lives in the heart and stays forever.</p>
+                                        </div>
+                                        <div class="p-5 pt-0">
+                                            <button class="btn"><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Watch Now</a></button>
+                                        </div>
+                                    </article>
+                                </div>
+                                <!-- Slide 3 -->
+                                <div class="shrink-0 p-4 basis-full md:basis-1/2 lg:basis-1/3">
+                                    <article class="h-full rounded-xl border border-gray-200 shadow-sm hover:shadow-md duration-200 overflow-hidden flex flex-col">
+                                        <img src="asset/images/work-photo2.png" alt="Live show" class="w-full h-56 object-cover" loading="lazy" decoding="async">
+                                        <div class="p-5 flex-1">
+                                            <h3 class="text-xl font-semibold mb-1">Ishq Ho – Aamir O Mir</h3>
+                                            <p class="text-sm text-gray-600">A soulful heartbreak anthem sung by Aamir O Mir, starring Jay Wadhwani, Riddhi Dangar & Avinash Pandya. A moving tale of love, silence, and separation.</p>
+                                        </div>
+                                        <div class="p-5 pt-0">
+                                            <button class="btn"><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Watch Now</a></button>
+                                        </div>
+                                    </article>
+                                </div>
+                                <!-- Slide 4 -->
+                                <div class="shrink-0 p-4 basis-full md:basis-1/2 lg:basis-1/3">
+                                    <article class="h-full rounded-xl border border-gray-200 shadow-sm hover:shadow-md duration-200 overflow-hidden flex flex-col">
+                                        <img src="asset/images/work-photo3.jpg" alt="Casting" class="w-full h-56 object-cover" loading="lazy" decoding="async">
+                                        <div class="p-5 flex-1">
+                                            <h3 class="text-xl font-semibold mb-1">Laad – Jignesh Barot</h3>
+                                            <p class="text-sm text-gray-600">A soulful heartbreak track sung by Jignesh Barot, with emotional lyrics and melody by Jitu Prajapati, capturing love, loss, and lasting memories.</p>
+                                        </div>
+                                        <div class="p-5 pt-0">
+                                            <button class="btn"><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Watch Now</a></button>
+                                        </div>
+                                    </article>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Mobile Controls -->
+                        <div class="flex sm:hidden items-center justify-center gap-3 mt-4">
+                            <button id="work-prev-m" class="btn px-4 py-2">Prev</button>
+                            <button id="work-next-m" class="btn px-4 py-2">Next</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="cta-section py-10 px-4 sm:py-12 sm:px-6">
+                <h2 class="heading2 text-center border-b-2 border-boder-color">
+                    Get in Touch
+                </h2>
+
+                <!-- Container -->
+                <div
+                    class="cta-container mt-8 sm:mt-12 max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-10 items-start">
+                    <!-- Form -->
+                    <div class="w-full cardup bg-white rounded-2xl shadow-lg p-5 sm:p-8 border-line">
+                        <h3
+                            class="heading3 border-b-2 border-boder-color pb-2 text-lg sm:text-2xl font-semibold text-center mb-5">
+                            Message
+                        </h3>
+
+                        <form id="contact-form" class="space-y-4 sm:space-y-5">
+                            <!-- Name -->
+                            <div>
+                                <label for="name" class="block text-sm font-medium text-gray-700 mb-1">Full Name</label>
+                                <input type="text" id="name" name="name" required
+                                    class="w-full px-3 py-2 sm:px-4 sm:py-2.5 border rounded-xl sm:rounded-2xl focus:outline-none focus:ring-1 focus:border-secondary  border-gray-300" />
+                            </div>
+
+                            <!-- Email -->
+                            <div>
+                                <label for="email" class="block text-sm font-medium text-gray-700 mb-1">Email
+                                    Address</label>
+                                <input type="email" id="email" name="email" required
+                                    class="w-full px-3 py-2 sm:px-4 sm:py-2.5 border rounded-xl sm:rounded-2xl focus:outline-none focus:ring-1 focus:border-secondary border-gray-300" />
+                            </div>
+
+                            <!-- Message -->
+                            <div>
+                                <label for="message"
+                                    class="block text-sm font-medium text-gray-700 mb-1">Message</label>
+                                <textarea id="message" name="message" rows="4" required
+                                    class="w-full px-3 py-2 sm:px-4 sm:py-2.5 border rounded-xl sm:rounded-2xl focus:outline-none focus:ring-1 focus:border-secondary border-gray-300"></textarea>
+                            </div>
+
+                            <!-- Button -->
+                            <button type="submit" id="submit-btn" onclick="applyButtonStyle()"
+                                class="flex items-center justify-center gap-2 px-4 py-2 sm:px-6 sm:py-2.5 btn send-btn mx-auto text-sm sm:text-base">
+                                <span id="btn-text">Send Message</span>
+                                <svg id="spinner" class="animate-spin h-5 w-5 text-white hidden"
+                                    xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                                    <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor"
+                                        stroke-width="4"></circle>
+                                    <path class="opacity-75" fill="currentColor"
+                                        d="M4 12a8 8 0 018-8v4a4 4 0 00-4 4H4z"></path>
+                                </svg>
+                            </button>
+                        </form>
+                        <p id="form-status" class="mt-2 text-sm text-center"></p>
+                    </div>
+
+                    <!-- Contact Info -->
+                    <div id="contact-me" class="bg-white shadow-lg rounded-2xl p-5 sm:p-8 cardup border-line">
+                        <h2
+                            class="heading3 border-b-2 border-boder-color pb-2 text-lg sm:text-2xl font-semibold text-center mb-5">
+                            Contact Me
+                        </h2>
+
+                        <!-- Email -->
+                        <div class="flex items-center space-x-3 sm:space-x-4 mb-5 text-primary">
+                            <ion-icon name="mail-outline" class="text-xl sm:text-2xl"></ion-icon>
+                            <div>
+                                <p class="font-medium text-sm sm:text-base">Email</p>
+                                <a href="mailto:barotkirtan7@gmail.com"
+                                    class="hover:underline truncate block max-w-[180px] sm:max-w-[220px] text-sm sm:text-base hover:text-secondary">
+                                    barotkirtan7@gmail.com
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- Phone -->
+                        <div class="flex items-center space-x-3 sm:space-x-4 mb-5">
+                            <ion-icon name="call-outline" class="text-xl sm:text-2xl"></ion-icon>
+                            <div>
+                                <p class="font-medium text-sm sm:text-base">Phone</p>
+                                <a href="tel:+919372568653"
+                                    class="hover:underline hover:text-secondary text-sm sm:text-base">+91 9372568653</a>
+                            </div>
+                        </div>
+
+                        <!-- Location -->
+                        <div class="flex items-center space-x-3 sm:space-x-4 mb-5">
+                            <ion-icon name="location-outline" class="text-xl sm:text-2xl"></ion-icon>
+                            <div>
+                                <p class="font-medium text-sm sm:text-base">Location</p>
+                                <a href="https://maps.app.goo.gl/FaYkSca24RyDkg8EA"
+                                    class="hover:underline hover:text-secondary text-sm sm:text-base">
+                                    Ahmedabad, Gujarat 382415
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- Follow Me -->
+                        <h3
+                            class="text-lg sm:text-xl font-semibold mt-8 mb-4 text-center pb-1 border-b-2 border-boder-color">
+                            Follow Me
+                        </h3>
+                        <div class="flex flex-wrap gap-5 sm:gap-6 text-xl sm:text-2xl justify-center text-primary">
+                            <a href="https://youtube.com/@dhollywoodnimoj?si=D7frYg94bPh3j3tU"
+                                class="hover:text-secondary" target="_blank" rel="noopener noreferrer"><ion-icon name="logo-youtube"></ion-icon></a>
+                            <a href="https://www.instagram.com/kirtan.barot?igsh=MTR1aGp6dXdoMTVlcw=="
+                                class="hover:text-secondary" target="_blank" rel="noopener noreferrer"><ion-icon name="logo-instagram"></ion-icon></a>
+                            <a href="#" class="hover:text-secondary" target="_blank" rel="noopener noreferrer"><img src="asset/icons/twitter-x-fill.svg" width="25px" height="25px" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <footer>
+                <div class="text-center py-6 text-sm text-secondary">
+                    &copy; 2024 Kirtan Barot &mdash; All rights reserved.
+                </div>
+            </footer>
+        </main>
+    </div>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js" defer></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js" defer></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script src="app.js" defer></script>
+</body>
+
+</html>
